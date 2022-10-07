@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  font-family: "Source Code Pro", monospace;
+}
+.container .section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-blend-mode: multiply;
+}
+.container .section:nth-child(1) {
+  background: url("../assets/background/498475.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: #26bad4;
+}
+.container .section:nth-child(1) h2 {
+  position: absolute;
+  right: 5%;
+  top: 10%;
+}
+.container .section:nth-child(1) p {
+  position: absolute;
+  left: 65%;
+  top: 60%;
+  width: 30%;
+  color: #fff;
+}
+.container .section:nth-child(1) aside {
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  width: 50%;
+}
+.container .section:nth-child(1) a {
+  color: #26bad4;
+}
+.container .section:nth-child(1) a:hover {
+  color: black;
+  background-color: red;
+}
+.container .section:nth-child(2) {
+  background: url("../assets/background/image2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: rgb(123, 100, 214);
+}
+.container .section:nth-child(2) h2 {
+  position: absolute;
+  left: 5%;
+  bottom: 10%;
+}
+.container .section:nth-child(2) p {
+  position: absolute;
+  right: 65%;
+  top: 60%;
+  width: 30%;
+}
+.container .section:nth-child(2) aside {
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  width: 50%;
+  color: #ffc741;
+}
+.container .section:nth-child(2) a {
+  color: rgb(123, 100, 214);
+}
+.container .section:nth-child(2) a:hover {
+  color: white;
+  background-color: teal;
+}
+
+.container .section:nth-child(3) {
+  background: url("../assets/background/minimal4.png");
+  background-size: cover;
+  background-attachment: fixed;
+  color: #03312e;
+}
+.container .section:nth-child(3) h2 {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+}
+.container .section:nth-child(3) p {
+  position: absolute;
+  right: 5%;
+  top: 40%;
+  width: 30%;
+}
+.container .section:nth-child(3) aside {
+  position: absolute;
+  left: 5%;
+  top: 30%;
+  width: 50%;
+}
+.container .section:nth-child(3) a {
+  color: #03312e;
+}
+.container .section:nth-child(3) a:hover {
+  color: #ffc741;
+  background-color: black;
+}
+
+@media (max-width: 992px) {
+  .container .section:nth-child(1) h2 {
+    position: absolute;
+    right: 10%;
+    top: 5%;
+  }
+  .container .section:nth-child(1) p {
+    position: absolute;
+    left: 20%;
+    top: 80%;
+    width: 75%;
+    color: #fff;
+  }
+  .container .section:nth-child(1) aside {
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    width: 80%;
+  }
+  .container .section:nth-child(2) h2 {
+    position: absolute;
+    left: 60%;
+    top: 15%;
+  }
+  .container .section:nth-child(2) p {
+    position: absolute;
+    left: 10%;
+    top: 55%;
+    width: 80%;
+  }
+  .container .section:nth-child(2) aside {
+    position: absolute;
+    left: 10%;
+    top: 75%;
+    width: 80%;
+    color: #ffc741;
+  }
+
+  .container .section:nth-child(3) h2 {
+    position: absolute;
+    right: 15%;
+    top: 40%;
+  }
+  .container .section:nth-child(3) p {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    width: 60%;
+  }
+  .container .section:nth-child(3) aside {
+    position: absolute;
+    left: 15%;
+    top: 70%;
+    width: 80%;
+    color: #ffc741;
+  }
+}
