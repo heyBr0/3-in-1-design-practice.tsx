@@ -1,41 +1,27 @@
 import "../styles/case1.css";
-import $ from "jquery"; 
 import Viber from "../assets/media/viber.jpeg";
 import Fb from "../assets/media/faceb.jpg";
 import Twitter from "../assets/media/twitter.jpg";
 import { NavLink } from "react-router-dom";
 
 const Case1 = () => {
-  // Smooth page scrolling
-   $(document).ready(function () {
-    $("a").on("click", function (e: Event) {
-      if (this.hash !== "") {
-        e.preventDefault();
-        let hash = this.hash;
-        $("html, body").animate(
-          {
-            scrollTop: $(hash).offset().top,
-          },
-          800,
-          function () {
-            window.location.hash = hash;
-          }
-        );
-      }
-    });
-  });
- 
+
+  const handleScroll = () => {
+    let element = document.querySelector("#pNavBottom") as HTMLElement;
+    element.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <div id="container-case1">
-      <nav id="nav-case1">
+      <div id="nav-case1">
         <NavLink to="/">
           <button></button>
         </NavLink>
 
         <p>
-          <a href="#email">Work </a>
+          <a onClick={handleScroll}>Work </a>
         </p>
-      </nav>
+      </div>
       <main>
         <h2>Explore.Research.Reflect</h2>
 
@@ -43,13 +29,11 @@ const Case1 = () => {
           src="https://player.vimeo.com/video/737854276?h=da7e72ba5e&title=0&byline=0&portrait=0?&amp;background=1"
           className="vimeo-video"
           allow="autoplay; fullscreen"
-           webkitallowfullscreen ="" 
-           mozallowfullscreen="" 
-          allowfullscreen="" 
+         /*  allowFullScreen="" */
           data-ready="true"
-          frameborder="0"
+          frameBorder="0"
           title="videoFromVimeo"
-        ></iframe> 
+        ></iframe>
 
         <h3>
           Lorem ipsum,<span>dolor sit amet</span> consectetur.
@@ -117,7 +101,7 @@ const Case1 = () => {
           </div>
         </footer>
         <aside>
-          <p>
+          <p id="pNavBottom">
             <NavLink to="/">All projects</NavLink>
           </p>
         </aside>

@@ -12,6 +12,12 @@
   list-style-type: none;
 }
 
+
+/* .burger-bar,
+.burger-menu {
+  visibility: hidden;
+} */
+
 #container-case1 {
   background-color: black;
   display: grid;
