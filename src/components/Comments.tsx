@@ -11,7 +11,7 @@ const Comments = () => {
   }, []);
 
   const [comment, setComment] = useState("");
-  const [comments, setComments] = useState<string[]>([]);
+  const [comments, setComments] = useState<string[]>(initialState);
   const submitComment = () => {
     setComments((comments) => [...comments, comment]);
     setComment("");
