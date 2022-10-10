@@ -1,0 +1,58 @@
+#commentsComponent {
+  color: white;
+}
+
+h4 {
+  color: teal;
+}
+
+button {
+  background-color: black;
+  color: white;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 25px;
+  border: 1px solid teal;
+}
+
+button:hover {
+  background-color: #ffc741;
+  color: black;
+  border: none;
+}
+
+.commentContainer {
+  color: black;
+  background-color: white;
+  height: 100px;
+  width: 35rem;
+  word-wrap: break-word;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+
+textarea {
+  height: 100px;
+  width: 35rem;
+  word-wrap: break-word;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+
+@media (max-width: 992px) {
+  #commentsComponent {
+    margin: 0;
+    padding: 0 1rem;
+  }
+
+  .commentContainer {
+    height: 100px;
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+    height: 100px;
+  }
+}
