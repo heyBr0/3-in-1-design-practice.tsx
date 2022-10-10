@@ -2,7 +2,12 @@ import "../styles/comments.css";
 import { useState, useEffect } from "react";
 
 const Comments = () => {
-  const initialState = JSON.parse(localStorage.getItem("comments") || "");
+  let initialState: [];
+  try {
+    initialState = JSON.parse(localStorage.getItem("comments") || "");
+  } catch (err) {
+    console.log("error", err);
+  }
 
   useEffect(() => {
     if (initialState) {
@@ -11,7 +16,7 @@ const Comments = () => {
   }, []);
 
   const [comment, setComment] = useState("");
-  const [comments, setComments] = useState<string[]>(initialState);
+  const [comments, setComments] = useState<string[]>([]);
   const submitComment = () => {
     setComments((comments) => [...comments, comment]);
     setComment("");
