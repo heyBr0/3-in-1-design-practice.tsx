@@ -12,7 +12,7 @@ const Case3 = () => {
       <main>
         <div className="message">
           <Comments />
-         Thank you!
+          Thank you!
         </div>
         <div className="top-left"></div>
         <div className="top-right"></div>

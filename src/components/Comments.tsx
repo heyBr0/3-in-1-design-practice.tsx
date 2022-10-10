@@ -34,7 +34,9 @@ const Comments = () => {
         <h4>Hey, leave your comment here:</h4>
         <textarea value={comment} onChange={onChangeHandler} />
         <br />
-        <button onClick={submitComment}>Submit</button>
+        <button className="commentButton" onClick={submitComment}>
+          Submit
+        </button>
       </div>
       {comments.map((text, index) => (
         <div key={index} className="commentContainer">
@@ -42,7 +44,9 @@ const Comments = () => {
         </div>
       ))}
       {comments.length > 0 && (
-        <button onClick={deleteComments}>Delete All</button>
+        <button className="commentButton" onClick={deleteComments}>
+          Delete All
+        </button>
       )}
     </div>
   );
