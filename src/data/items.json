@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Arctic Monkeys",
+    "title": "The Car Indie Colored Vinyl Edition",
+    "price": 27.99,
+    "imgUrl": "../img/arctic.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Smashing Pumpkins",
+    "title": "Live at Riviera Theatre in Chicago",
+    "price": 16.99,
+    "imgUrl": "../img/smashing.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Queens Of The Stone Age",
+    "title": "QotSA Orange Vinyl Edition",
+    "price": 24.99,
+    "imgUrl": "../img/queens.jpg"
+  }
+]

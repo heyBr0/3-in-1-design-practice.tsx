@@ -2,7 +2,7 @@ import "../styles/comments.css";
 import { useState, useEffect } from "react";
 
 const Comments = () => {
-  let initialState: [];
+  let initialState: []; // string ?
   try {
     initialState = JSON.parse(localStorage.getItem("comments") || "");
   } catch (err) {
