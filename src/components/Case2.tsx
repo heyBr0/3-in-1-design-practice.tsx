@@ -24,7 +24,7 @@ const Case2 = () => {
           <div id="itemsCase2">
             {storeItems.map((item) => (
               <div key={item.id}>
-                <StoreItem title={""} {...item} />
+                <StoreItem {...item} />
               </div>
             ))}
           </div>
