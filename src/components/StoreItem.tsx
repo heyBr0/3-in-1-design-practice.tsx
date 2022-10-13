@@ -22,6 +22,7 @@ const StoreItem = ({ id, name, title, price, imgUrl }: StoreItemProps) => {
     <div>
       <Card>
         <Card.Img
+          className="storeImg"
           variant="top"
           src={imgUrl}
           width="200px"
@@ -30,7 +31,6 @@ const StoreItem = ({ id, name, title, price, imgUrl }: StoreItemProps) => {
         />
         <Card.Body>
           <Card.Title>
-            <p>{id}</p>
             <p>{name}</p>
             <p>{title}</p>
             <p>{formatCurrency(price)}</p>

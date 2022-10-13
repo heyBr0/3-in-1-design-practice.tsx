@@ -19,5 +19,68 @@
     "title": "QotSA Orange Vinyl Edition",
     "price": 24.99,
     "imgUrl": "../img/queens.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Pixies",
+    "title": "Doolittle",
+    "price": 25.99,
+    "imgUrl": "../img/pixies.png"
+  },
+  {
+    "id": 5,
+    "name": "Yeah Yeah Yeahs",
+    "title": "Cool It Down Red Vinyl Edition",
+    "price": 24.99,
+    "imgUrl": "../img/yeahyeahyeahs.png"
+  },
+  {
+    "id": 6,
+    "name": "The Libertines",
+    "title": "Up The Bracket 20th Anniversary",
+    "price": 28.99,
+    "imgUrl": "../img/libertines.png"
+  },
+  {
+    "id": 7,
+    "name": "Interpol",
+    "title": "The Other Side Of Make Believe",
+    "price": 25.99,
+    "imgUrl": "../img/interpol.png"
+  },
+  {
+    "id": 8,
+    "name": "Liam Gallagher",
+    "title": "C'MON YOU KNOW Red Vinyl ",
+    "price": 27.99,
+    "imgUrl": "../img/liamgallagher.png"
+  },
+  {
+    "id": 9,
+    "name": "Arcade Fire",
+    "title": "Indie Brown Vinyl Edition",
+    "price": 32.99,
+    "imgUrl": "../img/arcadefire.png"
+  },
+  {
+    "id": 10,
+    "name": "PJ Harvey",
+    "title": "White Chalk ",
+    "price": 10.99,
+    "imgUrl": "../img/pjharvey.png"
+  },
+  {
+    "id": 11,
+    "name": "Apollo Brown",
+    "title": "This Must Be The Place",
+    "price": 34.99,
+    "imgUrl": "../img/apollobrown.png"
+  },
+  {
+    "id": 12,
+    "name": "Nirvana",
+    "title": "Unplugged in New York",
+    "price": 23.99,
+    "imgUrl": "../img/nirvana.png"
   }
 ]
