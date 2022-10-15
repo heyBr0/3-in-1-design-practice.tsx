@@ -20,7 +20,7 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
       </Offcanvas.Header>
       <Offcanvas.Body>
         <Stack gap={3}>
-          <div>
+          <div id="totalPrice">
             Total{" "}
             {formatCurrency(
               cartItems.reduce((total, cartItem) => {

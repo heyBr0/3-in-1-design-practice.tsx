@@ -31,9 +31,9 @@ const StoreItem = ({ id, name, title, price, imgUrl }: StoreItemProps) => {
         />
         <Card.Body>
           <Card.Title>
-            <p>{name}</p>
-            <p>{title}</p>
-            <p>{formatCurrency(price)}</p>
+            <p className="itemP">{name}</p>
+            <p className="itemP">{title}</p>
+            <p className="itemP">{formatCurrency(price)}</p>
           </Card.Title>
           <div>
             {quantity === 0 ? (
@@ -46,14 +46,34 @@ const StoreItem = ({ id, name, title, price, imgUrl }: StoreItemProps) => {
               </Button>
             ) : (
               <div className="dFlex">
-                <Button onClick={() => decreaseCartQuantity(id)}>-</Button>
-                <div>
-                  <span>{quantity}</span> in cart
+                <div className="dGrid">
+                  <div>
+                    <Button
+                      className="plusMinus"
+                      onClick={() => decreaseCartQuantity(id)}
+                    >
+                      -
+                    </Button>
+                  </div>
+                  <div>
+                    <span>{quantity}</span> in cart
+                  </div>
+                  <div>
+                    <Button
+                      className="plusMinus"
+                      onClick={() => increaseCartQuantity(id)}
+                    >
+                      +
+                    </Button>
+                  </div>
                 </div>
-                <Button onClick={() => increaseCartQuantity(id)}>+</Button>
-
                 <div className="dFlex">
-                  <Button onClick={() => removeFromCart(id)}>Remove</Button>
+                  <Button
+                    className="itemRemove"
+                    onClick={() => removeFromCart(id)}
+                  >
+                    Remove
+                  </Button>
                 </div>
               </div>
             )}

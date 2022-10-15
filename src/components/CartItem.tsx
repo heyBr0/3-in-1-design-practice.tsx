@@ -20,8 +20,8 @@ export function CartItem({ id, quantity }: CartItemProps) {
           {item.name} {quantity > 1 && <span>x{quantity}</span>}{" "}
         </div>
         <div className="cartPrice">{formatCurrency(item.price)}</div>
-        <Button className="deleteCart" onClick={() => removeFromCart(item.id)}>
-          delete &times;
+        <Button className="itemRemove2" onClick={() => removeFromCart(item.id)}>
+          &times;
         </Button>
       </div>
       <div className="totalItemCart">
