@@ -39,10 +39,7 @@ const Case1 = () => {
           Lorem ipsum,<span>dolor sit amet</span> consectetur.
         </h3>
         <h4>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ex
-          quos perferendis provident ducimus. Quaerat qui rerum assumenda
-          laborum omnis nam perspiciatis accusamus mollitia praesentium minima,
-          voluptas provident ad vel.
+        Extraplanetary radio telescope kindling the energy hidden in matter brain is the seed of intelligence paroxysm of global encyclopaedia galactica. The sky calls to us tendrils of gossamer clouds extraordinary claims require extraordinary evidence with pretty stories for which there's little good evidence invent the universe Euclid. Euclid rings of Saturn extraordinary claims require extraordinary evidence the only home we've ever known something incredible is waiting to be known how far away and billions of miles to go... 
         </h4>
         <section>
           <div>
